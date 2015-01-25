@@ -1,0 +1,38 @@
+# Daphne Ignores
+#
+# We always ignore these 4 types
+# of files:
+#
+# - Dependancies
+# - System/IDE generated files
+# - Environment files
+# - Build results
+
+# Dependancies
+#
+# These should be installed on each
+# system on initial clone. No need to
+# bloat the repo by tracking them.
+node_modules/
+
+# System files
+#
+# No one needs your .DS_Store file or
+# your IDE's project config file except you.
+.DS_Store
+
+# Environment files
+#
+# Not everyone uses nvm and devs should be
+# free to use whichever Node version they have
+# installed provided it meets the minimum 
+# requirements for the app to run.
+.nvmrc
+
+# Build results
+#
+# Git repositories are for development code.
+# We should be distributing pre-packaged, built
+# versions of the app separately. In this case
+# npm is the way to do this.
+dist/
